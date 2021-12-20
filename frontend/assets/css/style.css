@@ -3,6 +3,12 @@
   --font-second: "poppins";
   --color-primary: #34364a;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Navbar */
 .navbar .navbar-brand {
   width: 122px;
@@ -10,6 +16,9 @@
   font-size: 36px;
   color: #000;
   margin-right: 60px;
+}
+.navbar .Logo-Brand {
+  width: 100px;
 }
 .navbar .nav-link {
   font-size: 18px;
@@ -24,7 +33,7 @@
   border-radius: 100px;
 }
 .navbar .btn-secondary {
-  background-color: #79018c;
+  background-color: #66dddd;
   border: 0;
 }
 
@@ -43,6 +52,7 @@
 /* Home section */
 .Home-section {
   padding-top: 5%;
+  background: #e5e9f2;
 }
 .Home-section .Home-row h1 {
   font-family: var(--font-title);
@@ -52,7 +62,7 @@
   font-family: var(--font-second);
   font-size: 20px;
   letter-spacing: 1px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .Home-section .Home-row a {
@@ -68,21 +78,23 @@
   margin-top: 50px;
 }
 .Home-section .Home-row .home-image {
-  width: 580px;
+  width: 483.59px;
+  height: 469.75px;
 }
 /* Roadmap-section */
 .Roadmap-section {
   padding-top: 5%;
   font-family: var(--font-second);
+  background: #e5e9f2;
+  width: 100%;
 }
 .Roadmap-section h1 {
   font-size: 36px;
   font-weight: bold;
 }
 .Roadmap-section .card-Roadmap {
-  width: 346px;
-  height: 344px;
-  border-radius: 20px;
+  width: 20rem;
+  border-radius: 18px;
   font-family: var(--font-second);
   background: #fff;
 }
@@ -102,11 +114,46 @@
 .Roadmap-section .card-Roadmap span {
   color: #000;
 }
-
+/* Fitur-section */
+.Fitur-section {
+  padding-top: 5%;
+  font-family: var(--font-second);
+}
+.Fitur-section .container {
+  background: #e5e9f2;
+  border-radius: none;
+  border-radius: 18px;
+}
+.Fitur-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.Fitur-section .card-Fitur {
+  width: 16rem;
+  border-radius: 12px;
+  font-family: var(--font-second);
+  background: #fff;
+}
+.Fitur-section .card-Fitur img {
+  width: 100px;
+  height: 100px;
+  background-color: #e5e9f2;
+  border-radius: 100px;
+}
+.Fitur-section .card-Fitur h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Fitur-section .card-Fitur p {
+  font-size: 15px;
+}
+.Fitur-section .card-Fitur span {
+  color: #000;
+}
 /* Breakpoint */
 /* Home page */
 /* version mobile */
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .navbar .btn-serach {
     display: none;
     position: relative;
@@ -143,6 +190,12 @@
   .Roadmap-section {
     padding-top: 25%;
     font-family: var(--font-second);
+  }
+  .Roadmap-section .row-Roadmap {
+    margin-top: 20px;
+  }
+  .Roadmap-section .card-Roadmap {
+    width: 95%;
   }
 }
 
