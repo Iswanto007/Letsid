@@ -2,13 +2,18 @@
   --font-title: "poppins-bold";
   --font-second: "poppins";
   --color-primary: #34364a;
+  --Background-color: #f6f8fd;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+h1,
+h2,
+h3 {
+  letter-spacing: 0.1rem;
+}
 /* Navbar */
 .navbar .navbar-brand {
   width: 122px;
@@ -38,13 +43,13 @@
 }
 
 .navbar .btn-login {
-  width: 157px;
-  height: 55px;
-  border-radius: 20px;
+  width: 160px;
+  height: 45px;
+  border-radius: 27px;
   font-family: var(--font-second);
   font-weight: bold;
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 5px;
   color: #fff;
 }
 /* akhir navbar */
@@ -52,8 +57,12 @@
 /* Home section */
 .Home-section {
   padding-top: 5%;
-  background: #e5e9f2;
+  background-image: url(../images/1\ 1.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
 }
+
 .Home-section .Home-row h1 {
   font-family: var(--font-title);
   font-size: 45px;
@@ -65,36 +74,41 @@
   margin-top: 20px;
 }
 
-.Home-section .Home-row a {
-  width: 259px;
-  height: 50px;
-  border-radius: 27px;
+.Home-section .Home-search {
+  width: 400px;
+  height: 55px;
   border: none;
-  background-color: #e5e9f2;
+  border-radius: 25px 0px 0px 25px;
   font-family: var(--font-second);
-  color: var(--color-primary);
-  font-size: 20px;
-  padding-top: 10px;
-  margin-top: 50px;
+  padding-left: 20px;
 }
-.Home-section .Home-row .home-image {
-  width: 483.59px;
-  height: 469.75px;
+
+.Home-section .fa-search {
+  position: absolute;
+  padding-top: 8px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #66dddd;
+  border-radius: 0px 25px 25px 0px;
+  width: 80px;
+  height: 55px;
 }
 /* Roadmap-section */
 .Roadmap-section {
   padding-top: 5%;
   font-family: var(--font-second);
-  background: #e5e9f2;
+  background-color: var(--Background-color);
   width: 100%;
 }
 .Roadmap-section h1 {
   font-size: 36px;
   font-weight: bold;
 }
+
 .Roadmap-section .card-Roadmap {
   width: 20rem;
   border-radius: 18px;
+  border: none;
   font-family: var(--font-second);
   background: #fff;
 }
@@ -104,6 +118,7 @@
   background-color: #e5e9f2;
   border-radius: 100px;
 }
+
 .Roadmap-section .card-Roadmap h5 {
   font-size: 24px;
   font-weight: bold;
@@ -118,11 +133,7 @@
 .Fitur-section {
   padding-top: 5%;
   font-family: var(--font-second);
-}
-.Fitur-section .container {
-  background: #e5e9f2;
-  border-radius: none;
-  border-radius: 18px;
+  background: var(--Background-color);
 }
 .Fitur-section h1 {
   font-size: 36px;
@@ -131,6 +142,7 @@
 .Fitur-section .card-Fitur {
   width: 16rem;
   border-radius: 12px;
+  border: none;
   font-family: var(--font-second);
   background: #fff;
 }
@@ -149,6 +161,133 @@
 }
 .Fitur-section .card-Fitur span {
   color: #000;
+}
+
+.Daftar-section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: var(--font-second);
+  background: #f6f8fd;
+}
+
+.Daftar-section .Content-Daftar img {
+  width: 200px;
+  height: 200px;
+  background-color: #e5e9f2;
+  border-radius: 100px;
+}
+
+.Daftar-section .btn-daftar {
+  background: #52a7cc;
+  width: 250px;
+  height: 45px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.Daftar-section p {
+  font-size: 20px;
+}
+
+/* course-section */
+.Course-section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: var(--font-second);
+  background: #f6f8fd;
+}
+.Course-section p {
+  font-size: 20px;
+}
+.Course-section .card-course {
+  width: 346px;
+  height: 340px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-top: 10px;
+}
+
+.Course-section .card-course:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s;
+}
+
+.Course-section img {
+  padding: 15px;
+}
+
+.Course-section .Icon-Recomend {
+  position: relative;
+  left: 0px;
+  top: -35px;
+}
+.Course-section .component .card-text {
+  position: relative;
+  top: -19px;
+}
+.footer-section {
+  padding-top: 5%;
+  height: 50vh;
+  font-family: var(--font-second);
+  background: #f6f8fd;
+  box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+}
+.footer-section img {
+  width: 30%;
+}
+.footer-section p {
+  margin-top: 25px;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+.footer-section ul {
+  position: relative;
+  left: -30px;
+  margin-top: 35px;
+}
+
+.footer-section li {
+  list-style: none;
+  text-decoration: none;
+}
+.footer-section li a {
+  text-decoration: none;
+  line-height: 2.1em;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #000;
+}
+.footer-section li a:hover {
+  text-decoration: none;
+  line-height: 2.1em;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #66dddd;
+}
+
+.footer-section .text-product {
+  margin-top: 40px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.footer-section .list-group-item {
+  position: relative;
+  left: -8%;
+  border: none;
+  background: none;
+  font-size: 50px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 /* Breakpoint */
 /* Home page */
@@ -195,8 +334,47 @@
     margin-top: 20px;
   }
   .Roadmap-section .card-Roadmap {
-    width: 95%;
+    width: 100%;
+  }
+
+  .Fitur-section .card-Fitur {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Course-section .card-course {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Course-section .card-course:hover {
+    transform: none;
+    transition: none;
+  }
+  .footer-section {
+    height: 100vh;
+  }
+  .footer-section .list-group-item {
+    position: relative;
+    left: 2.5%;
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .footer-section .list-group-item:nth-child(1):hover {
+    color: red;
+  }
+  .footer-section .list-group-item:nth-child(2):hover {
+    background: #121fcf;
+    background: -webkit-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+    background: -moz-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+    background: linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .footer-section .list-group-item:nth-child(3):hover {
+    color: #548cff;
   }
 }
-
 /* akhir breakpoint */
