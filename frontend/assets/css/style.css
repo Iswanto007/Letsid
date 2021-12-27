@@ -193,7 +193,7 @@ h3 {
 /* course-section */
 .Course-section {
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   font-family: var(--font-second);
   background: #f6f8fd;
 }
@@ -207,7 +207,7 @@ h3 {
   border: none;
   cursor: pointer;
   transition: transform 0.3s;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .Course-section .card-course:hover {
@@ -228,6 +228,7 @@ h3 {
   position: relative;
   top: -19px;
 }
+
 .footer-section {
   padding-top: 5%;
   height: 50vh;
@@ -288,6 +289,20 @@ h3 {
   font-size: 50px;
   cursor: pointer;
   margin-top: 15px;
+}
+.footer-section .list-group-item:nth-child(1):hover {
+  color: red;
+}
+.footer-section .list-group-item:nth-child(2):hover {
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+  background: linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-section .list-group-item:nth-child(3):hover {
+  color: #548cff;
 }
 /* Breakpoint */
 /* Home page */
@@ -361,20 +376,6 @@ h3 {
     background: none;
     font-size: 40px;
     cursor: pointer;
-  }
-  .footer-section .list-group-item:nth-child(1):hover {
-    color: red;
-  }
-  .footer-section .list-group-item:nth-child(2):hover {
-    background: #121fcf;
-    background: -webkit-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
-    background: -moz-linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
-    background: linear-gradient(to right, #121fcf 0%, #ff26e9 50%, #cf601f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .footer-section .list-group-item:nth-child(3):hover {
-    color: #548cff;
   }
 }
 /* akhir breakpoint */
