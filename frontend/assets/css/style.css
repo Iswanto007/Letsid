@@ -109,9 +109,18 @@ h3 {
   width: 20rem;
   border-radius: 18px;
   border: none;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   font-family: var(--font-second);
   background: #fff;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
+
+.Roadmap-section .card-Roadmap:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s;
+}
+
 .Roadmap-section .card-Roadmap img {
   width: 120px;
   height: 120px;
@@ -129,42 +138,9 @@ h3 {
 .Roadmap-section .card-Roadmap span {
   color: #000;
 }
-/* Fitur-section */
-.Fitur-section {
-  padding-top: 5%;
-  font-family: var(--font-second);
-  background: var(--Background-color);
-}
-.Fitur-section h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-.Fitur-section .card-Fitur {
-  width: 16rem;
-  border-radius: 12px;
-  border: none;
-  font-family: var(--font-second);
-  background: #fff;
-}
-.Fitur-section .card-Fitur img {
-  width: 100px;
-  height: 100px;
-  background-color: #e5e9f2;
-  border-radius: 100px;
-}
-.Fitur-section .card-Fitur h5 {
-  font-size: 24px;
-  font-weight: bold;
-}
-.Fitur-section .card-Fitur p {
-  font-size: 15px;
-}
-.Fitur-section .card-Fitur span {
-  color: #000;
-}
 
 .Daftar-section {
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
   font-family: var(--font-second);
   background: #f6f8fd;
@@ -203,6 +179,7 @@ h3 {
 .Course-section .card-course {
   width: 346px;
   height: 340px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -217,6 +194,7 @@ h3 {
 
 .Course-section img {
   padding: 15px;
+  border-radius: 26px;
 }
 
 .Course-section .Icon-Recomend {
