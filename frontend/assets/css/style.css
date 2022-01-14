@@ -1,8 +1,8 @@
 :root {
   --font-title: "poppins-bold";
   --font-second: "poppins";
-  --color-primary: #34364a;
-  --Background-color: #f6f8fd;
+  --color-primary: #ececec;
+  --Background-color: #cdd7f8;
   --color-bottom: #66dddd;
   --bottom-hover: #53bebe;
 }
@@ -58,14 +58,12 @@ h3 {
 
 /* Home section */
 .Home-section {
-  padding-top: 5%;
-  background-image: url(../images/1\ 1.png);
+  position: relative;
   background-repeat: no-repeat;
   min-height: 100vh;
-  color: white;
+  color: black;
 }
-
-.Home-section .Home-row h1 {
+.Home-section .Home-section .Home-row h1 {
   font-family: var(--font-title);
   font-size: 45px;
 }
@@ -216,12 +214,14 @@ h3 {
   position: relative;
   top: -19px;
 }
+/* akhir Home Page */
 
 .footer-section {
   padding-top: 5%;
-  height: 50vh;
+  height: 100vh;
   font-family: var(--font-second);
   background: #f6f8fd;
+  border-radius: 50px 50px 0px 0px;
   box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
@@ -292,6 +292,36 @@ h3 {
 .footer-section .list-group-item:nth-child(3):hover {
   color: #548cff;
 }
+
+/* Sigin/Sigup Page */
+.hero {
+  font-family: var(--font-second);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.hero .kolom-1 {
+  background: #dc474f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.hero img {
+  width: 100%;
+}
+.hero .kolom-2 p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.hero .kolom-2 .btn {
+  position: relative;
+  top: -20%;
+}
+.hero .content {
+  margin-top: 20%;
+}
+
 /* Breakpoint */
 /* Home page */
 /* version mobile */
@@ -364,6 +394,9 @@ h3 {
     background: none;
     font-size: 40px;
     cursor: pointer;
+  }
+  .hero .kolom-1 {
+    display: none;
   }
 }
 /* akhir breakpoint */
