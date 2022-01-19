@@ -1,10 +1,12 @@
 :root {
   --font-title: "poppins-bold";
   --font-second: "poppins";
-  --color-primary: #ececec;
-  --Background-color: #cdd7f8;
-  --color-bottom: #66dddd;
-  --bottom-hover: #53bebe;
+  --main-color: #f7f8fd;
+  --primary-color: #2f37a4;
+  --secondary-color: #fe721c;
+  --hover-color: #1f2579;
+  --white-text: #ffffff;
+  --black-text: #000;
 }
 * {
   margin: 0;
@@ -17,10 +19,11 @@ h3 {
   letter-spacing: 0.1rem;
 }
 /* Navbar */
+.navbar {
+  background: var(--main-color);
+}
 .navbar .navbar-brand {
   width: 122px;
-  font-family: "spartan";
-  font-size: 36px;
   color: #000;
   margin-right: 60px;
 }
@@ -28,43 +31,47 @@ h3 {
   width: 100px;
 }
 .navbar .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 40px;
   font-family: var(--font-second);
   color: var(--color-primary) !important;
 }
-.navbar .search-button {
-  width: 60px;
-  height: 60px;
-  background-color: #e5e9f2;
-  border-radius: 100px;
-}
-.navbar .btn-secondary {
-  background-color: #66dddd;
-  border: 0;
+.navbar .nav-link:hover::after {
+  content: "";
+  width: 60%;
+  display: block;
+  border-bottom: 3px solid var(--primary-color);
+  margin: auto;
+  padding-bottom: 3px;
+  margin-bottom: -6px;
 }
 
 .navbar .btn-login {
   width: 160px;
   height: 45px;
   border-radius: 27px;
+  background-color: var(--primary-color);
   font-family: var(--font-second);
   font-weight: bold;
   font-size: 20px;
   padding-top: 5px;
   color: #fff;
 }
+.navbar .btn:hover {
+  background: var(--hover-color);
+}
 /* akhir navbar */
 
 /* Home section */
 .Home-section {
-  position: relative;
-  background-repeat: no-repeat;
+  background: var(--main-color);
   min-height: 100vh;
-  color: black;
+  font-family: var(--font-second);
+  padding-top: 4%;
 }
-.Home-section .Home-section .Home-row h1 {
+.Home-section .Home-row h1 {
   font-family: var(--font-title);
+  font-weight: bold;
   font-size: 45px;
 }
 .Home-section .Home-row p {
@@ -72,13 +79,15 @@ h3 {
   font-size: 20px;
   letter-spacing: 1px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .Home-section .Home-search {
   width: 400px;
   height: 55px;
   border: none;
-  border-radius: 25px 0px 0px 25px;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   font-family: var(--font-second);
   padding-left: 20px;
   color: #78797e;
@@ -89,17 +98,24 @@ h3 {
   padding-top: 8px;
   font-size: 40px;
   color: #fff;
-  background-color: #66dddd;
-  border-radius: 0px 25px 25px 0px;
+  background-color: var(--primary-color);
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   width: 80px;
   height: 55px;
+}
+.Home-section .fa-search:hover {
+  background-color: var(--hover-color);
+}
+.Home-section img {
+  width: 390px;
 }
 /* Roadmap-section */
 .Roadmap-section {
   padding-top: 5%;
   font-family: var(--font-second);
-  background-color: var(--Background-color);
-  width: 100%;
+  background-color: var(--main-color);
+  min-height: 100vh;
 }
 .Roadmap-section h1 {
   font-size: 36px;
@@ -112,7 +128,7 @@ h3 {
   border: none;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   font-family: var(--font-second);
-  background: #fff;
+  background-color: #fff;
   transition: transform 0.3s;
   cursor: pointer;
 }
@@ -123,10 +139,8 @@ h3 {
 }
 
 .Roadmap-section .card-Roadmap img {
-  width: 120px;
-  height: 120px;
-  background-color: #e5e9f2;
-  border-radius: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .Roadmap-section .card-Roadmap h5 {
@@ -136,8 +150,18 @@ h3 {
 .Roadmap-section .card-Roadmap p {
   font-size: 18px;
 }
-.Roadmap-section .card-Roadmap span {
-  color: #000;
+.Roadmap-section .card-Roadmap .btn-gabung {
+  background: var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.Roadmap-section .card-Roadmap .btn-gabung:hover {
+  background: var(--hover-color);
+}
+.Roadmap-section .card-Roadmap a {
+  color: var(--white-text);
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .Daftar-section {
@@ -218,16 +242,10 @@ h3 {
 
 .footer-section {
   padding-top: 5%;
-  height: 100vh;
+  height: 60vh;
   font-family: var(--font-second);
-  background: #f6f8fd;
-  border-radius: 50px 50px 0px 0px;
-  box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
-  -webkit-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
-  box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
-  -webkit-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 2px -1px 8px -2px rgba(0, 0, 0, 0.47);
+  background: var(--primary-color);
+  color: var(--white-text);
 }
 .footer-section img {
   width: 30%;
@@ -277,6 +295,7 @@ h3 {
   font-size: 50px;
   cursor: pointer;
   margin-top: 15px;
+  color: var(--white-text);
 }
 .footer-section .list-group-item:nth-child(1):hover {
   color: red;
@@ -366,24 +385,26 @@ h3 {
 /* Home page */
 /* version mobile */
 @media (max-width: 575.98px) {
-  .navbar .btn-serach {
-    display: none;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-  }
   .navbar .btn-login {
     width: 100%;
     height: 55px;
     border-radius: 25px;
     font-family: var(--font-second);
     font-size: 20px;
+    padding-top: 10px;
     color: #fff;
   }
-  /* home section */
-  .Home-section .Home-row .home-image {
+  .navbar .nav-link:hover:after {
     display: none;
+  }
+  /* home section */
+  .Home-section {
+    background: var(--main-color);
+    font-family: var(--font-second);
+  }
+  .Home-section img {
+    margin-top: 40px;
+    width: 90%;
   }
   .Home-section .Home-row .btn-daftar {
     width: 100%;
@@ -398,16 +419,34 @@ h3 {
     letter-spacing: 0.5px;
     margin-top: 50px;
   }
+  .Home-section .Home-search {
+    width: 100%;
+  }
+  .Home-section .fa-search {
+    display: none;
+  }
   /*  Roadmap-section*/
   .Roadmap-section {
-    padding-top: 25%;
     font-family: var(--font-second);
+    padding-top: 10%;
   }
   .Roadmap-section .row-Roadmap {
     margin-top: 20px;
   }
   .Roadmap-section .card-Roadmap {
     width: 100%;
+  }
+  .Roadmap-section .card-Roadmap {
+    width: 20rem;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-second);
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .Roadmap-section .card-Roadmap:hover {
+    transform: none;
   }
 
   .Fitur-section .card-Fitur {
@@ -448,4 +487,5 @@ h3 {
     width: 100%;
   }
 }
+
 /* akhir breakpoint */
