@@ -165,16 +165,16 @@ h3 {
 }
 
 .Daftar-section {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 5%;
   font-family: var(--font-second);
-}
-
-.Daftar-section .Content-Daftar img {
+  background-image: url(../images/jumbotron.png);
   background-size: cover;
-  width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
 }
-
 .Daftar-section .btn-daftar {
   background: var(--primary-color);
   width: 250px;
@@ -195,6 +195,23 @@ h3 {
 
 .Daftar-section p {
   font-size: 20px;
+}
+/* benefit-section */
+.benefit-section {
+  min-height: 100vh;
+  background: var(--main-color);
+  font-family: var(--font-second);
+}
+.benefit-section .benefit-content {
+  margin-bottom: 5em;
+}
+.benefit-section .benefit {
+  letter-spacing: 0.12rem;
+  font-size: 14px;
+}
+.benefit-section img {
+  margin-top: -10%;
+  width: 600px;
 }
 
 /* course-section */
@@ -462,7 +479,19 @@ h3 {
     transition: none;
   }
 
-  .Daftar-section img {
+  .Daftar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    font-family: var(--font-second);
+    background-image: none;
+    background-size: none;
+    min-height: 80vh;
+    max-width: 100%;
+  }
+
+  .benefit-section img {
     display: none;
   }
 
