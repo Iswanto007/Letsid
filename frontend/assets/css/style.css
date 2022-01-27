@@ -329,7 +329,7 @@ h3 {
   color: #548cff;
 }
 
-/* Sigin/Sigup Page */
+/* /Sigup Page */
 .hero {
   font-family: var(--font-second);
   box-sizing: border-box;
@@ -337,24 +337,36 @@ h3 {
   padding: 0;
 }
 .hero .kolom-1 {
-  background: #f6f8fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: var(--primary-color);
   min-height: 100vh;
+  color: #fff;
+}
+.hero .kolom-1 h2 {
+  font-size: 25px;
+}
+
+.hero .kolom-1 h4 {
+  margin-top: -5%;
+  font-size: 18px;
+  letter-spacing: 0.1em;
 }
 
 .hero img {
-  width: 100%;
+  width: 70%;
 }
 .hero .kolom-2 span {
   margin-top: 10px;
   margin-right: 10px;
 }
-.hero .kolom-2 .btn {
+.hero .kolom-2 .btn-login {
+  width: 118px;
+  height: 44px;
   position: relative;
   top: 3%;
   border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
 }
 .hero .content {
   margin-top: 20%;
@@ -538,18 +550,39 @@ h3 {
     font-size: 40px;
     cursor: pointer;
   }
-  .hero .kolom-1 {
+  .hero .first-column {
     display: none;
   }
-  .hero .kolom-2 {
-    position: relative;
-  }
+
   .hero .btn-sigup button {
-    position: relative;
-    right: 30px;
-    margin-bottom: 10px;
     width: 100%;
   }
+
+  .hero .btn-sigup {
+    position: relative;
+    margin-top: 30%;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000;
+  }
+
+  .hero .content h3 {
+    font-size: 20px;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  .hero .content p {
+    display: none;
+  }
+  .hero .ketentuan {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* notfound page */
   .notfound-section img {
     width: 100%;
   }
@@ -572,6 +605,7 @@ h3 {
   .btn-notfound-section {
     padding-bottom: 2rem;
   }
+  /* sign in/up */
 }
 
 /* akhir breakpoint */
