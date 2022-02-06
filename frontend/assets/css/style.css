@@ -368,6 +368,16 @@ h3 {
   color: #fff;
   font-size: 18px;
 }
+.hero .kolom-2 .btn-regis {
+  width: 118px;
+  height: 44px;
+  position: relative;
+  top: 3%;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+}
 .hero .content {
   margin-top: 20%;
 }
@@ -550,20 +560,62 @@ h3 {
     font-size: 40px;
     cursor: pointer;
   }
+
+  /* sign/sign up */
+  .hero .kolom-2 .btn-login {
+    margin-left: 10px;
+    width: 80px;
+    height: 44px;
+    position: relative;
+    top: 3%;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+  }
+  .hero .kolom-2 .btn-regis {
+    margin-left: 5px;
+    width: 90px;
+    height: 40px;
+    position: relative;
+    top: 3%;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .hero {
+    background: var(--main-color);
+    min-height: 100vh;
+  }
   .hero .first-column {
     display: none;
   }
-
-  .hero .btn-sigup button {
-    width: 100%;
-  }
-
   .hero .btn-sigup {
     position: relative;
-    margin-top: 30%;
-    width: 200px;
-    height: 300px;
-    border: 1px solid #000;
+    top: 4em;
+    left: -3em;
+    right: 0;
+  }
+
+  .hero .btn-sigup button {
+    position: relative;
+    width: 300px;
+    height: 80px;
+  }
+  .hero .btn-sigup .logo {
+    position: relative;
+    transform: translateX(50%);
+  }
+
+  .hero .btn-sigup .btn-icon {
+    width: 40px;
+    padding-top: 30px;
+  }
+
+  .hero .btn-sigup .logo {
+    width: 130px;
   }
 
   .hero .content h3 {
