@@ -1,8 +1,8 @@
 :root {
   --font-title: "poppins-bold";
   --font-second: "poppins";
-  --main-color: #f7f8fd;
-  --primary-color: #2f37a4;
+  --main-color: #fff;
+  --primary-color: #2e37a4;
   --secondary-color: #fe721c;
   --hover-color: #1f2579;
   --white-text: #ffffff;
@@ -29,7 +29,8 @@ h3 {
   margin-right: 60px;
 }
 .navbar .Logo-Brand {
-  width: 100px;
+  width: 57.24px;
+  height: 54.47px;
 }
 .navbar .nav-link {
   font-size: 20px;
